@@ -146,24 +146,22 @@ pcl_viewer building2_9.pcd planned_path.pcd
 ## 使用示例
 
 ```cpp
-auto converter =
-    std::make_shared<pcd2octomap::Pcd2OctomapConverter>();
+octomap_obj = std::make_shared<pcd2octomap::Pcd2OctomapConverter>();
 
-converter->convert();
+octomap_obj->convert();
 
-auto planner =
-    std::make_shared<global_planner::GlobalPlanner>();
+global_obj = std::make_shared<global_planner::GlobalPlanner>();
 
-planner->setOctomap(
-    converter->getOctomap());
+global_obj->setOctomap(octomap_obj->getOctomap());
+
 
 global_planner::PointPose start;
 global_planner::PointPose goal;
 
-planner->makePlan(start, goal);
+global_obj->makePlan(start, goal);
 
 std::vector<global_planner::PointPose> path;
-planner->getPlannerResults(path);
+global_obj->getPlannerResults(path);
 ```
 
 ---
