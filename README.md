@@ -76,14 +76,6 @@ OctoPlanner3D
 sudo apt install libpcl-dev
 ```
 
-### OctoMap
-
-用于三维占据地图构建。
-
-```bash
-sudo apt install liboctomap-dev
-```
-
 ---
 
 ## 编译
@@ -184,18 +176,6 @@ planner->getPlannerResults(path);
 * 巡检机器人自主导航
 * 三维环境自主探索
 * 学术研究与算法验证
-
----
-
-## 后续规划
-
-* JPS3D
-* Theta*
-* Hybrid A*
-* ESDF 支持
-* 动态障碍物处理
-* ROS2 接口
-* GPU 加速
 
 ---
 
