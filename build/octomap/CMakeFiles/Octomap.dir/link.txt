@@ -1,0 +1,2 @@
+/usr/bin/ar qc libOctomap.a CMakeFiles/Octomap.dir/src/pcd2octomap_converter.cpp.o
+/usr/bin/ranlib libOctomap.a

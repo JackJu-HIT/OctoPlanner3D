@@ -1,0 +1,2 @@
+/usr/bin/ar qc libGlobalPlanner.a CMakeFiles/GlobalPlanner.dir/src/global_planner.cpp.o
+/usr/bin/ranlib libGlobalPlanner.a
